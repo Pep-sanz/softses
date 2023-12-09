@@ -3,11 +3,11 @@ import Button from "./button";
 
 export default function Navbar() {
   return (
-    <div className=" w-full z-50 font-roboto bg-biru">
-      <div className="container m-auto py-6 w-ful flex justify-between items-center border-b-2">
-        <img src={logo} alt="" className="w-[193.28px] h-[50px]" />
-        <div className="text-center flex justify-evenly items-center w-1/2 ">
-          <ul className="text-white font-bold flex justify-between items-center w-full text-sm">
+    <div className=" w-full z-50 font-roboto bg-biru flex justify-center items-center absolute ">
+      <div className="container py-6 flex justify-between items-center border-b-2 box-border max-sm:justify-around">
+        <img src={logo} alt="" className="w-[193.28px] h-[50px] max-sm:w-[150px] max-sm:h-auto" />
+        <div className="text-center flex justify-evenly items-center w-1/2 max-sm:hidden">
+          <ul className="text-white font-bold flex justify-between items-center w-full text-sm ">
             <li>
               <a href="#" className="text-orange-400 text-sm font-bold">
                 Home
@@ -27,7 +27,20 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <Button text="Download" />
+        <div className="max-sm:hidden">
+          <Button text="Download" />
+        </div>
+        <div className="hamburger menu w-8 h-[20px] relative hidden max-sm:block">
+          <span className="w-full h-[4px] block bg-black absolute top-0 rounded-xl "></span>
+          <span
+            className="w-full h-[4px] block bg-black absolute
+          top-2 rounded-xl "
+          ></span>
+          <span
+            className="w-full h-[4px] block bg-black absolute
+          top-4 rounded-xl "
+          ></span>
+        </div>
       </div>
     </div>
   );
