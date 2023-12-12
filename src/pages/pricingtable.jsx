@@ -2,13 +2,13 @@ import Button from "../components/button";
 
 export default function PricingTable() {
   return (
-    <div className="w-full h-screen flex flex-col justify-evenly items-center font-roboto">
-      <div className="w-full flex flex-col justify-center items-center">
+    <div className="w-full pt-16 flex flex-col justify-evenly items-center font-roboto">
+      <div className="w-full flex flex-col justify-center items-center mb-10">
         <h5 className="text-orange-400 text-sm font-bold tracking-[3.50px]">PRICING TABLE</h5>
-        <p className="text-black text-[40px] font-bold leading-[52px]">Choose your pricing plan</p>
+        <p className="text-black font-bold leading-[52px] text-2xl">Choose your pricing plan</p>
       </div>
-      <div className="w-full flex justify-evenly items-center">
-        <div className="w-[370px] h-[596px] border border-zinc-100 flex flex-col justify-evenly items-center bg-white rounded">
+      <div className="w-full flex justify-evenly items-center flex-col">
+        <div className="w-[370px] h-[596px] border border-zinc-100 flex flex-col justify-evenly items-center bg-white rounded mb-10">
           <h5 className="text-black text-[40px] font-medium leading-[64px]">FREE</h5>
           <div className="w-full h-16 ">
             <div className="w-1/2 flex justify-center border-b-2 m-auto">
@@ -35,7 +35,7 @@ export default function PricingTable() {
             no credit card required.
           </div>
         </div>
-        <div className="w-[370px] h-[596px] border border-zinc-100 flex flex-col justify-evenly items-center bg-white shadow rounded">
+        <div className="w-[370px] h-[596px] border border-zinc-100 flex flex-col justify-evenly items-center bg-white shadow rounded mb-10">
           <h5 className="text-orange-400 text-[40px] font-medium leading-[64px]">Standard</h5>
           <div className="w-full h-16 ">
             <div className="w-1/2 flex justify-center border-b-2 m-auto">

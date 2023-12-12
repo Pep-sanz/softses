@@ -7,10 +7,10 @@ export default function BlogPost() {
   return (
     <div className="w-full h-screen flex flex-col justify-evenly items-center font-roboto">
       <div className="w-full flex flex-col justify-center items-center">
-        <h5 className="text-orange-400 text-sm font-bold tracking-[3.50px]">BLOG POST</h5>
-        <p className="text-black text-[40px] font-bold leading-[52px]">Latest insight post the our company</p>
+        <h5 className="text-orange-400 text-sm font-bold tracking-[3.50px] mb-3">BLOG POST</h5>
+        <p className="text-black font-bold text-2xl text-center">Latest insight post the our company</p>
       </div>
-      <div className="w-full flex justify-evenly items-center">
+      <div className="w-full justify-evenly items-center grid grid-cols-2 gap-5">
         <Card
           poster={Blog1}
           date="22 April 2021"

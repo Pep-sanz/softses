@@ -8,12 +8,22 @@ import Testi6 from "../assets/testi6.png";
 
 export default function TestiMonials() {
   return (
-    <div className="bg-bgSilver w-full h-screen flex justify-evenly items-center font-roboto ">
-      <div className="w-1/2 h-1/2 flex flex-col justify-center items-center">
-        <p className="w-[570px] h-[85px] text-center text-black text-lg font-medium leading-[28.80px]">&#34;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi&#34;</p>
+    <div className="bg-bgSilver w-full h-screen flex justify-evenly items-center font-roboto flex-col">
+      <div className="md:hidden">
+        <h5 className="text-orange-400 text-2xl font-bold tracking-[3.50px]">TestiMonials</h5>
+      </div>
+      <div className="h-1/2 flex flex-col items-center w-full justify-around">
+        <p className="h-[85px] text-center text-black font-medium leading-[28.80px] text-base w-full mb-10">
+          &#34;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi&#34;
+        </p>
         <div className="w-1/2 flex flex-col justify-center items-center mb-10">
-          <div className="text-center text-stone-500 text-[13px] font-medium leading-[20.80px]">Hasan Mahmud</div>
-          <div className=" text-center text-stone-500 text-[11px] font-normal leading-[17.60px]">UI/UX Designer</div>
+          <div className="flex flex-col justify-center items-center gap-3 ">
+            <img src={Testi6} alt="" className=" rounded-full md:hidden" />
+          <div className="text-center text-stone-500 font-medium ">
+            <div className=" text-[13px] leading-[20.80px]">Hasan Mahmud</div>
+            <div className=" text-[11px] font-normal leading-[17.60px]">UI/UX Designer</div>
+          </div>
+          </div>
         </div>
         <div className="w-[75px] h-[30px] flex justify-between">
           <div className="w-[30px] h-[30px] bg-orange-400">
@@ -24,18 +34,16 @@ export default function TestiMonials() {
           </div>
         </div>
       </div>
-      <div className="">
-        <div className="w-[430px] h-[430px] rounded-full border flex justify-center items-center relative">
-          <div className="w-[430px] h-[430px] relative">
-            <img src={Testi2} alt="" className=" rounded-full absolute " />
-            <img src={Testi3} alt="" className=" rounded-full absolute -top-5 right-20" />
-            <img src={Testi4} alt="" className=" rounded-full absolute -right-5 bottom-16 " />
-            <img src={Testi5} alt="" className=" rounded-full absolute -bottom-10 right-40  " />
-            <img src={Testi6} alt="" className=" rounded-full absolute bottom-28 -left-10 " />
-          </div>
-          <div className="w-60 h-60 rounded-full border flex justify-center items-center absolute">
-            <img src={Testi1} alt="" className="rounded-full" />
-          </div>
+      <div className="w-[430px] h-[430px] rounded-full border justify-center items-center relative hidden">
+        <div className="w-[430px] h-[430px] relative">
+          <img src={Testi2} alt="" className=" rounded-full absolute " />
+          <img src={Testi3} alt="" className=" rounded-full absolute -top-5 right-20" />
+          <img src={Testi4} alt="" className=" rounded-full absolute -right-5 bottom-16 " />
+          <img src={Testi5} alt="" className=" rounded-full absolute -bottom-10 right-40  " />
+          <img src={Testi6} alt="" className=" rounded-full absolute bottom-28 -left-10 " />
+        </div>
+        <div className="w-60 h-60 rounded-full border flex justify-center items-center absolute">
+          <img src={Testi1} alt="" className="rounded-full" />
         </div>
       </div>
     </div>

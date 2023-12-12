@@ -12,6 +12,9 @@ export default {
         roboto: ["Roboto", "sans-serif"],
       },
       colors: { biru: "#0061FF" },
+      transitionTimingFunction:{
+        inAnimation: 'opacity 1s ease-in-out, transform 0.5s ease-in-out'
+      }
     },
   },
   plugins: [],

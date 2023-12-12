@@ -3,15 +3,15 @@ import Logo2 from "../assets/logo2.png";
 
 export default function Footer() {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
-      <div className=" h-[341px] container flex justify-between items-center border-b-2">
-        <div className=" box-border h-full flex flex-col justify-center">
-          <img src={Logo2} alt="" className="w-[193.28px] h-[50px] mb-[25px]" />
+    <footer className="w-full flex flex-col justify-center items-center border-t-2 overflow-hidden">
+      <div className=" h-[341px] container flex justify-between items-center border-b-2 flex-col">
+        <div className=" box-border h-full flex flex-col justify-center text-sm">
+          <img src={Logo2} alt="" className="mb-[25px] w-[100px] h-[25px]" />
           <span className="w-[370px]">Landing page builder is a hosted platform powered by the brizy builder aiming to connect you with potential clients.</span>
         </div>
         <div className="w-full flex justify-around items-center text-stone-500 text-[13px] font-normal ">
           <div className="leading-7">
-            <h5 className="mb-[30px] text-xl font-bold text-black leading-loose">Company</h5>
+            <h5 className="font-bold text-black leading-loose text-base mb-[15px]">Company</h5>
             <ul>
               <li>
                 <a href="" className="hover:text-orange-400 transition">About us</a>
@@ -28,7 +28,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="leading-7">
-            <h5 className="mb-[30px] text-xl font-bold text-black leading-loose">Product</h5>
+            <h5 className="font-bold text-black leading-loose text-base mb-[15px]">Product</h5>
             <ul>
               <li>
                 <a href="" className="hover:text-orange-400 transition">Feature</a>
@@ -45,7 +45,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="leading-7">
-            <h5 className="mb-[30px] text-xl font-bold text-black leading-loose">Download</h5>
+            <h5 className="font-bold text-black leading-loose text-base mb-[15px]">Download</h5>
             <ul>
               <li>
                 <a href="" className="hover:text-orange-400 transition">iOS</a>
@@ -62,7 +62,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="leading-7">
-            <h5 className="mb-[30px] text-xl font-bold text-black leading-loose">Support</h5>
+            <h5 className="font-bold text-black leading-loose text-base mb-[15px]">Support</h5>
             <ul>
               <li>
                 <a href="" className="hover:text-orange-400 transition">Privacy</a>
@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="h-[87px] container flex justify-between items-center">
+      <div className="h-[87px] container flex items-center flex-col justify-center gap-3">
         <div>
           <span className="text-stone-500 text-sm font-normal  leading-snug">Copyright ©2019 </span>
           <span className="text-blue-600 text-sm font-medium  leading-snug">softsas</span>
@@ -101,6 +101,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
