@@ -11,17 +11,17 @@ import Footer from "./pages/footer";
 
 export default function App() {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col overflow-hidden">
       <HeroSection />
       <FeatureSection />
-      {/* <HowItWork /> */}
-      {/* <QuestionsSection /> */}
-      {/* <WorkProcess /> */}
-      {/* <PricingTable /> */}
-      {/* <TestiMonials /> */}
-      {/* <BlogPost /> */}
-      {/* <Download /> */}
-      {/* <Footer />  */}
+      <HowItWork />
+      <QuestionsSection />
+      <WorkProcess />
+      <PricingTable />
+      <TestiMonials />
+      <BlogPost />
+      <Download />
+      <Footer /> 
     </div>
   );
 }

@@ -4,9 +4,9 @@ import Logo2 from "../assets/logo2.png";
 export default function Footer() {
   return (
     <footer className="w-full flex flex-col justify-center items-center border-t-2 overflow-hidden">
-      <div className=" h-[341px] container flex justify-between items-center border-b-2 flex-col">
+      <div className=" h-[341px] container flex flex-col justify-between items-center border-b-2 lg:flex-row ">
         <div className=" box-border h-full flex flex-col justify-center text-sm">
-          <img src={Logo2} alt="" className="mb-[25px] w-[100px] h-[25px]" />
+          <img src={Logo2} alt="" className="mb-[25px] w-[100px] h-[25px] lg:w-[193.28px] lg:h-[50px]" />
           <span className="w-[370px]">Landing page builder is a hosted platform powered by the brizy builder aiming to connect you with potential clients.</span>
         </div>
         <div className="w-full flex justify-around items-center text-stone-500 text-[13px] font-normal ">
@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="h-[87px] container flex items-center flex-col justify-center gap-3">
+      <div className="h-[87px] container flex items-center flex-col justify-center gap-3 lg:flex-row lg:justify-between">
         <div>
           <span className="text-stone-500 text-sm font-normal  leading-snug">Copyright ©2019 </span>
           <span className="text-blue-600 text-sm font-medium  leading-snug">softsas</span>

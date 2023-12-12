@@ -8,17 +8,17 @@ import Testi6 from "../assets/testi6.png";
 
 export default function TestiMonials() {
   return (
-    <div className="bg-bgSilver w-full h-screen flex justify-evenly items-center font-roboto flex-col">
-      <div className="md:hidden">
+    <div className="bg-bgSilver w-full h-screen flex justify-between items-center pt-10 pb-20 font-roboto flex-col lg:flex-row lg:justify-evenly lg:pb-0">
+      <div className="lg:hidden">
         <h5 className="text-orange-400 text-2xl font-bold tracking-[3.50px]">TestiMonials</h5>
       </div>
-      <div className="h-1/2 flex flex-col items-center w-full justify-around">
-        <p className="h-[85px] text-center text-black font-medium leading-[28.80px] text-base w-full mb-10">
+      <div className="h-1/2 flex flex-col items-center w-full justify-center  lg:w-1/2 lg:justify-center">
+        <p className="container h-[85px] text-center text-black font-medium leading-[28.80px] text-base mb-10">
           &#34;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi&#34;
         </p>
         <div className="w-1/2 flex flex-col justify-center items-center mb-10">
           <div className="flex flex-col justify-center items-center gap-3 ">
-            <img src={Testi6} alt="" className=" rounded-full md:hidden" />
+            <img src={Testi6} alt="" className=" rounded-full lg:hidden" />
           <div className="text-center text-stone-500 font-medium ">
             <div className=" text-[13px] leading-[20.80px]">Hasan Mahmud</div>
             <div className=" text-[11px] font-normal leading-[17.60px]">UI/UX Designer</div>
@@ -34,7 +34,7 @@ export default function TestiMonials() {
           </div>
         </div>
       </div>
-      <div className="w-[430px] h-[430px] rounded-full border justify-center items-center relative hidden">
+      <div className="w-[430px] h-[430px] rounded-full border lg:flex justify-center items-center relative hidden ">
         <div className="w-[430px] h-[430px] relative">
           <img src={Testi2} alt="" className=" rounded-full absolute " />
           <img src={Testi3} alt="" className=" rounded-full absolute -top-5 right-20" />

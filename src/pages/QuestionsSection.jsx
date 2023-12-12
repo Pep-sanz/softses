@@ -4,13 +4,13 @@ import Map1 from "../assets/map1.svg";
 
 export default function QuestionsSection() {
   return (
-    <div className="w-full h-screen font-roboto flex flex-col justify-center items-center box-border">
+    <div className="w-full h-screen font-roboto flex flex-col justify-center items-center box-border mt-10">
       <div className=" w-full flex flex-col justify-center items-center">
         <h5 className="text-orange-400 text-sm font-bold tracking-[3.50px] mb-5 ">ASKED QUESTIONS</h5>
         <p className="text-black font-bold text-3xl text-center">Something about our management</p>
       </div>
-      <div className="w-full box-border flex justify-around items-center flex-col mt-10 ">
-        <div className="flex flex-col justify-center items-center w-full gap-[15px]">
+      <div className="w-full box-border flex justify-around items-center flex-col mt-10 md:flex-row ">
+        <div className="flex flex-col justify-center items-center w-full gap-[15px] sm:w-[570px] sm:h-[346px]">
           <div className="text-lg font-bold bg-white text-white shadow rounded-lg w-[80%] h-auto">
             <div className="h-[47px] bg-orange-400 flex justify-between items-center px-5 rounded-t-lg">
               <p className="leading-normal">Completely Responsive.</p>
@@ -36,39 +36,39 @@ export default function QuestionsSection() {
             </div>
           </div>
         </div>
-        <img src={Pngkit} alt="" className="w-[700px] h-[385.96px] hidden" />
+        <img src={Pngkit} alt="" className="w-[700px] h-[385.96px] hidden lg:block" />
       </div>
-      <div className=" absolute bottom-0 w-full hidden ">
-        <div className="relative w-[80%] h-[170px] mt-10">
+      <div className="container hidden lg:block lg:mt-5 ">
+        <div className="relative w-[80%] h-[170px] mt-10 m-auto">
           <div className="h-[284px] top-[51px] absolute bg-blue-600 bg-opacity-20 rounded-[30px] w-full -left-[30px]" />
           <div className="h-[284px] top-[36px] absolute bg-blue-600 bg-opacity-30 rounded-[30px] w-full -left-[15px]" />
           <div className="h-[300px] top-0 absolute bg-blue-600 rounded-[30px] flex w-full left-[15px] ">
-            <div className="w-full h-full absolute justify-evenly items-center grid grid-cols-2">
-              <div className="h-[136px] relative w-full">
+            <div className="w-full h-full absolute grid grid-cols-2 sm:flex sm:justify-between sm:items-center">
+              <div className="h-[136px] relative w-full z-10">
                 <div className=" w-full h-full m-auto flex flex-col justify-center items-center gap-2 absolute">
-                  <div className="left-[14px] text-white font-bold leading-relaxed text-base static w-auto top-0">Total Download</div>
-                  <div className="w-[100px] h-[0px] left-[28px] border-4 border-orange-400 static top-0"></div>
                   <div className="left-0 top-0 text-white text-[70px] font-bold leading-[91px] text-3xl static">80k+</div>
+                  <div className="w-[100px] h-[0px] left-[28px] border-4 border-orange-400 static top-0"></div>
+                  <div className="left-[14px] text-white font-bold leading-relaxed text-base static w-auto top-0 sm:text-xl">Total Download</div>
                 </div>
               </div>
-              <div className=" h-[136px] relative w-full">
+              <div className=" h-[136px] relative w-full z-10">
                 <div className=" w-full h-full m-auto flex flex-col justify-center items-center gap-2 absolute">
-                  <div className="left-[14px] text-white font-bold leading-relaxed text-base static w-auto top-0">Happy Users</div>
+                  <div className="left-0 top-0 text-white font-bold leading-[91px] text-[70px] static">25k+</div>
                   <div className="w-[100px] h-[0px] left-[28px] border-4 border-orange-400 static top-0"></div>
-                  <div className="left-0 top-0 text-white font-bold leading-[91px] text-3xl static">25k+</div>
+                  <div className="left-[14px] text-white font-bold leading-relaxed text-xl static w-auto top-0 ">Happy Users</div>
                 </div>
               </div>
-              <div className="h-[136px] relative w-full col-span-2">
+              <div className="h-[136px] relative w-full col-span-2 z-10">
                 <div className=" w-full h-full m-auto flex flex-col justify-center items-center gap-2 absolute">
-                  <div className="left-[14px] text-white font-bold leading-relaxed text-base static w-auto top-0">Great Reviews</div>
-                  <div className="w-[100px] h-[0px] left-[28px] border-4 border-orange-400 static top-0"></div>
                   <div className="left-0 top-0 text-white text-[70px] font-bold leading-[91px] text-3xl static">35k+</div>
+                  <div className="w-[100px] h-[0px] left-[28px] border-4 border-orange-400 static top-0"></div>
+                  <div className="left-[14px] text-white font-bold leading-relaxed text-base static w-auto top-0">Great Reviews</div>
                 </div>
               </div>
             </div>
-            <div className="m-auto flex ">
-              <img src={Map1} alt="" />
-              <img src={Map} alt="" className="hidden" />
+            <div className="flex w-full absolute ">
+              <img src={Map} alt="" className="w-1/2"/>
+              <img src={Map1} alt="" className="w-1/2"/>
             </div>
           </div>
         </div>

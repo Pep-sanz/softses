@@ -2,21 +2,21 @@ import MacbookPro from "../assets/MacbookPro.svg";
 
 export default function HowItWork() {
   return (
-    <div className="w-full h-screen font-roboto bg-bgSilver bg-cover flex justify-center static pt-10">
-      <div className="absolute -left-52 -top-20 w-[1537px] h-[961px] hidden">
-        <img src={MacbookPro} alt="" className="w-[1537px] h-[961px]" />
+    <div className="w-full h-screen font-roboto bg-bgSilver bg-cover flex justify-center pt-10 lg:justify-end mt-10 lg:mt-0">
+      <div className="hidden lg:block lg:w-[1250px] lg:h-[961px]">
+        <img src={MacbookPro} alt="" className="" />
       </div>
-      <div className="flex flex-col justify-start items-start w-full h-full gap-5right-10 top-28 static mt-0">
+      <div className="flex flex-col justify-start items-start container h-full gap-5 lg:w-1/2 lg:justify-center">
         <div className="w-full flex flex-col justify-center items-center gap-2">
         <h5 className="text-orange-400 text-sm font-bold tracking-[3.50px]">HOW IT WORK</h5>
         <p className="text-black font-bold  text-2xl">
           Solutions for every softwore
           <br />
           problems solved
-        </p>
+        </p>  
         </div>
-        <div className="w-full gap-5 flex flex-col justify-center items-center mt-16 px-5">
-          <div className="">
+        <div className="w-full gap-5 flex flex-col justify-center items-center mt-16 px-5 lg:mt-5 lg:gap-20">
+          <div>
             <div className="flex items-center gap-3">
               <span className="text-neutral-400 text-3xl font-bold">01</span>
               <span className="text-black font-medium text-xl">Get Started</span>
