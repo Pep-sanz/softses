@@ -8,45 +8,56 @@ export default function Navbar() {
   const handleclick = () => {
     setIsActive(!isActive);
   };
+
+  const menuItem = [
+    { label: "Home", href: "/home" },
+    { label: "Feature", href: "/home" },
+    { label: "How to Make", href: "/home" },
+    { label: "contact", href: "/home" },
+    { label: "Profile", href: "/home" },
+  ];
+
+  const [isMenuShow, setisMenuShow] = useState(false);
+
   return (
-    <div className=" w-full font-roboto bg-biru flex justify-center items-center relative z-50 ">
-      <div className="container py-6 flex justify-between items-center border-b-2 px-10 lg:px-0 lg:justify-evenly">
-        <img src={logo} alt="" className="w-[193.28px] h-[50px]" />
-        <div className={`text-center flex justify-evenly items-center w-1/2 absolute top-0 right-0 -z-50 h-screen bg-biru lg:static lg:h-auto ${isActive ? "md:translate-x-0 max-md:translate-x-0 md:ease-out max-md:ease-out md:duration-300 max-md:duration-300" : "md:translate-x-full max-md:translate-x-full md:ease-in max-md:ease-in md:duration-300 max-md:duration-300"} lg:translate-x-0`}>
-          <ul className={`text-white font-bold flex justify-between items-center w-full text-md  md:flex-col md:justify-center md:mt-10 md:gap-10 lg:flex-row max-md:flex-col h-full gap-16 mt-56 lg:mt-0 lg:text-sm`}>
-            <li>
-              <a href="#" className="text-orange-400 text-md font-bold">
-                Home
+    <>
+      <div className=" w-full font-roboto h-[80px] hidden md:flex justify-center items-center fixed top-0 left-0 right-0 z-50 bg-orange-700">
+        <ul className="hidden md:flex space-x-6">
+          {menuItem.map((res, i) => (
+            <li key={i}>
+              <a href={res.href} className="text-red-400 text-md font-bold">
+                {res.label}
               </a>
             </li>
-            <li>
-              <a href="#">Features</a>
-            </li>
-            <li>
-              <a href="#">How to make</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            {isActive && (
-              <li>
-                <Button text="Download" />
-              </li>
-            )}
-          </ul>
-        </div>
-        <div className="hidden lg:block">
-          <Button text="Download" />
-        </div>
-        <div onClick={handleclick} className="hamburger menu h-[20px]  lg:hidden flex flex-col justify-between ">
-          <span className={`w-[28px] h-[4px] block bg-white rounded-xl ${isActive ? "origin-top-left rotate-45 translate-x-1 -translate-y-[1px] duration-300 transition-all" : "ease-in-out duration-300"}`}></span>
-          <span className={`w-[28px] h-[4px] block bg-white rounded-xl ${isActive ? "opacity-0" : "opacity-100 ease-in-out duration-300"}`}></span>
-          <span className={`w-[28px] h-[4px] block bg-white rounded-xl ${isActive ? "origin-bottom-left -rotate-45 translate-x-1 translate-y-[1px] duration-300 transition-all" : "ease-in-out duration-300"}`}></span>
-        </div>
+          ))}
+        </ul>
       </div>
-    </div>
+
+      <button
+        className="h-[50px] w-[50px] bg-red-300 absolute right-0 top-0 m-6 block md:hidden z-[50]"
+        onClick={() => setisMenuShow((prev) => !prev)}
+      >
+        burger
+      </button>
+
+      {/* {isMenuShow && ( */}
+      <div
+        className=" w-full font-roboto h-screen md:h-[80px] fixed top-0 left-0 right-0 z-[40] bg-red-700 transition-all"
+        style={{
+          left: isMenuShow ? 0 : "100vw",
+        }}
+      >
+        <ul className="flex-col md:hidden h-full w-full">
+          {menuItem.map((res, i) => (
+            <li className="p-6 border-b" key={i}>
+              <a href={res.href} className="text-amber-400 text-md font-bold">
+                {res.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* )} */}
+    </>
   );
 }

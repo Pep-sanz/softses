@@ -6,12 +6,24 @@ import Envato from "../assets/envato.svg";
 import Docean from "../assets/3docean.svg";
 import Graph from "../assets/graphicrever.svg";
 import Kanba from "../assets/kanba.svg";
+// import bgBlue from "/img/bgBlue.svg";
 
 export default function HeroSection() {
   return (
-    <div className="w-full h-screen font-roboto relative lg:h-[800px]">
+    <div className="w-full h-screen font-roboto relative  flex justify-center">
+      <div className="h-[75vh] sm:h-[65vh] bg-biru w-full">
+        <img
+          src="/img/bgBlue.svg"
+          className="w-full bottom-[75px] absolute"
+          alt=""
+        />
+      </div>
       <Navbar />
-      <div className="w-full h-[25%] relative bg-biru after:content-[''] after:absolute after:-bottom-12 after:left-1  after:w-full rounded-b-3xl after:h-full after:bg-biru after:origin-bottom after:-rotate-6 after:rounded-3xl sm:h-1/2 lg:h-1/2 lg:after:-bottom-24"/>
+      <div className="absolute bottom-0 px-6">
+        <img src={Laptop} alt="" />
+      </div>
+      {/* <img src={"/img/bgBlue.svg"} alt="" /> */}
+      {/* <div className="w-full h-[25%] relative bg-biru after:content-[''] after:absolute after:-bottom-12 after:left-1  after:w-full rounded-b-3xl after:h-full after:bg-biru after:origin-bottom after:-rotate-6 after:rounded-3xl sm:h-1/2 lg:h-1/2 lg:after:-bottom-24"/>
       <div className="absolute top-40 left-0 right-0 flex flex-col justify-center items-center lg:top-36 ">
         <div className="text-center text-white text-2xl font-bold mb-5 sm:text-[40px] sm:mb-8 lg:text-[60px]">
           <p className="sm:leading-[52px] lg:leading-[80px]">
@@ -32,7 +44,7 @@ export default function HeroSection() {
         <img src={Docean} alt="" className=" h-[50px] w-[115px] m-auto lg:w-[231px] lg:h-[50px]" />
         <img src={Graph} alt="" className="h-[50px] w-[115px] m-auto lg:w-[231px] lg:h-[50px]" />
         <img src={Kanba} alt="" className="h-[50px] w-[115px] m-auto lg:w-[231px] lg:h-[50px]" />
-      </div>
+      </div> */}
     </div>
   );
 }
