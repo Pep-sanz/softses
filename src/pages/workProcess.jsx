@@ -4,7 +4,7 @@ import Icon5 from "../assets/icon (5).svg";
 
 export default function WorkProcess() {
   return (
-    <div className="w-full flex flex-col justify-evenly items-center font-roboto lg:pt-16 lg:mt-60">
+    <div className="w-full flex flex-col justify-evenly items-center font-roboto mt-16 lg:pt-16 lg:mt-60 px-6">
       <div className="w-full flex flex-col justify-center items-center gap-5 mb-10">
         <h5 className="text-orange-400 text-sm font-bold tracking-[3.50px]">WORK PROCESS</h5>
         <p className=" text-black text-3xl text-center font-bold lg:text-2xl lg:text-center">How to work it software application</p>

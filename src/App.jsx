@@ -11,14 +11,14 @@ import Footer from "./pages/footer";
 
 export default function App() {
   return (
-    <div className="w-full flex flex-col overflow-hidden">
-      <HeroSection />
+    <div className="w-full flex flex-col">
+      <HeroSection/>
       <FeatureSection />
       <HowItWork />
       <QuestionsSection />
       <WorkProcess />
       <PricingTable />
-      <TestiMonials />
+      <TestiMonials />  
       <BlogPost />
       <Download />
       <Footer /> 

@@ -1,42 +1,22 @@
 import Pngkit from "../assets/pngkit.svg";
 import Map from "../assets/map.svg";
 import Map1 from "../assets/map1.svg";
+import MyDropdown from "../components/MyDropdown/MyDropDown";
 
 export default function QuestionsSection() {
   return (
-    <div className="w-full h-screen font-roboto flex flex-col justify-center items-center box-border mt-10">
+    <div className="w-full font-roboto flex flex-col justify-start items-center box-border mt-16 gap-[50px] px-6">
       <div className=" w-full flex flex-col justify-center items-center">
         <h5 className="text-orange-400 text-sm font-bold tracking-[3.50px] mb-5 ">ASKED QUESTIONS</h5>
         <p className="text-black font-bold text-3xl text-center">Something about our management</p>
       </div>
       <div className="w-full box-border flex justify-around items-center flex-col mt-10 md:flex-row ">
-        <div className="flex flex-col justify-center items-center w-full gap-[15px] sm:w-[570px] sm:h-[346px]">
-          <div className="text-lg font-bold bg-white text-white shadow rounded-lg w-[80%] h-auto">
-            <div className="h-[47px] bg-orange-400 flex justify-between items-center px-5 rounded-t-lg">
-              <p className="leading-normal">Completely Responsive.</p>
-              <span className="leading-normal self-start">_</span>
-            </div>
-            <p className="text-zinc-500 text-[13px] font-normal px-5 pt-2 leading-[20.80px]">
-              AeroLand appears professional in design and responsive in performance. It proves to be highly customizable and efficient for landing site building. Engage yourself in the most effortless and well-appointed process with
-              AeroLand.
-            </p>
-          </div>
-          <div className="flex flex-col justify-center items-center text-zinc-800 text-lg font-bold w-[80%] gap-[15px]">
-            <div className="w-full h-12 bg-white shadow flex justify-between items-center rounded-lg px-3">
-              <p className="leading-normal">Free Lifetime Updates.</p>
-              <span className="leading-normal">+</span>
-            </div>
-            <div className="w-full h-12 bg-white shadow flex justify-between items-center rounded-lg px-3">
-              <p className="leading-normal">Excellent Customer Support.</p>
-              <span className="leading-normal">+</span>
-            </div>
-            <div className="w-full h-12 bg-white shadow flex justify-between items-center rounded-lg px-3">
-              <p className="leading-normal">Easy & User Friendly Services.</p>
-              <span className="leading-normal">+</span>
-            </div>
-          </div>
+        <div className="flex flex-col justify-center items-center w-full lg:w-1/2 gap-[15px] px-6">
+          <MyDropdown textHeader="Completely Responsive." />
+          <MyDropdown textHeader="Free Lifetime Updates." />
+          <MyDropdown textHeader="Easy & User Friendly Services." />
         </div>
-        <img src={Pngkit} alt="" className="w-[700px] h-[385.96px] hidden lg:block" />
+        <img src={Pngkit} alt="" className="w-[350px] h-[285.96px] lg:w-[600px] lg:h-[385.96px]" />
       </div>
       <div className="container hidden lg:block lg:mt-5 ">
         <div className="relative w-[80%] h-[170px] mt-10 m-auto">
@@ -67,8 +47,8 @@ export default function QuestionsSection() {
               </div>
             </div>
             <div className="flex w-full absolute ">
-              <img src={Map} alt="" className="w-1/2"/>
-              <img src={Map1} alt="" className="w-1/2"/>
+              <img src={Map} alt="" className="w-1/2" />
+              <img src={Map1} alt="" className="w-1/2" />
             </div>
           </div>
         </div>

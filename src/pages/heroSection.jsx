@@ -6,45 +6,37 @@ import Envato from "../assets/envato.svg";
 import Docean from "../assets/3docean.svg";
 import Graph from "../assets/graphicrever.svg";
 import Kanba from "../assets/kanba.svg";
-// import bgBlue from "/img/bgBlue.svg";
 
 export default function HeroSection() {
   return (
-    <div className="w-full h-screen font-roboto relative  flex justify-center">
-      <div className="h-[75vh] sm:h-[65vh] bg-biru w-full">
-        <img
-          src="/img/bgBlue.svg"
-          className="w-full bottom-[75px] absolute"
-          alt=""
-        />
-      </div>
+    <div className="w-full h-screen font-roboto overflow-x-hidden">
       <Navbar />
-      <div className="absolute bottom-0 px-6">
-        <img src={Laptop} alt="" />
-      </div>
-      {/* <img src={"/img/bgBlue.svg"} alt="" /> */}
-      {/* <div className="w-full h-[25%] relative bg-biru after:content-[''] after:absolute after:-bottom-12 after:left-1  after:w-full rounded-b-3xl after:h-full after:bg-biru after:origin-bottom after:-rotate-6 after:rounded-3xl sm:h-1/2 lg:h-1/2 lg:after:-bottom-24"/>
-      <div className="absolute top-40 left-0 right-0 flex flex-col justify-center items-center lg:top-36 ">
-        <div className="text-center text-white text-2xl font-bold mb-5 sm:text-[40px] sm:mb-8 lg:text-[60px]">
-          <p className="sm:leading-[52px] lg:leading-[80px]">
-            We will help you create <br />
-            the software of your choice
-          </p>
+      <div className="h-[45vh] lg:h-[55vh] bg-biru w-full relative">
+        <img src="/img/bgBlue.svg" className="w-full -bottom-[80px] sm:-bottom-[150px] md:-bottom-[200px] absolute" alt="" />
+        <div className="absolute bottom-[-140px] sm:bottom-[-160px] md:bottom-[-200px] lg:bottom-[-185px] m-auto w-full h-full px-6  flex flex-col justify-between items-center">
+          <div className="w-full h-full flex flex-col justify-center items-center mb-6">
+            <div className="text-center text-white text-2xl sm:text-4xl font-bold mb-6 lg:text-6xl lg:leading-[70px]">
+              <p>
+                We will help you create <br />
+                the software of your choice
+              </p>
+            </div>
+            <Button text="Get Started Now" />
+            <img src={Laptop} alt="laptop" className="w-[400px] md:w-[450px] lg:w-[550px] mt-6 sm:mt-10 lg:mt-6" />
+          </div>
         </div>
-        <Button text="Get Started Now" />
+          <div className="hidden sm:block w-full h-[33vh] top-[280px] md:h-[42vh] relative">
+            <img src={Cube} alt="" className=" w-[30vh] md:w-[35vh] lg:w-[45vh] absolute right-[-35px] md:right-[-25px] lg:right-[20px] bottom-0 lg:-bottom-8" />
+          </div>
       </div>
-      <div className="absolute h-[450px] w-[225px] top-[380px] -right-12 sm:-right-10 sm:top-[300px] sm:w-[300px] hidden sm:block lg:w-[450px] lg:h-[350px] lg:top-[250px] lg:-right-8">
-        <img src={Cube} alt="" />
+      <div className="absolute w-full h-[25vh] lg:h-auto bottom-10 md:bottom-2 lg:flex justify-center items-center">
+        <div className="container grid grid-cols-2 m-auto lg:flex">
+          <img src={Envato} alt="" className="h-[100px] w-[125px] mx-auto md:w-[150px]" />
+          <img src={Docean} alt="" className="h-[100px] w-[125px] mx-auto md:w-[150px]" />
+          <img src={Graph} alt="" className="h-[100px] w-[125px] mx-auto md:w-[150px]" />
+          <img src={Kanba} alt="" className="h-[100px] w-[125px] mx-auto  md:w-[150px]" />
+        </div>
       </div>
-      <div className="absolute right-0 left-0 m-auto w-[400px] top-[350px] sm:w-[400px] sm:h-[220px] sm:top-[400px] lg:w-[600px] lg:h-[341.09px]">
-        <img src={Laptop} alt="" />
-      </div>
-      <div className="container m-auto grid grid-cols-2 sm:flex sm:justify-around sm:items-center absolute bottom-0 left-0 right-0 lg:bottom-0 lg:justify-between">
-        <img src={Envato} alt="" className="h-[50px] w-[115px] m-auto lg:w-[231px] lg:h-[50px]" />
-        <img src={Docean} alt="" className=" h-[50px] w-[115px] m-auto lg:w-[231px] lg:h-[50px]" />
-        <img src={Graph} alt="" className="h-[50px] w-[115px] m-auto lg:w-[231px] lg:h-[50px]" />
-        <img src={Kanba} alt="" className="h-[50px] w-[115px] m-auto lg:w-[231px] lg:h-[50px]" />
-      </div> */}
     </div>
   );
 }
