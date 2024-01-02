@@ -24,7 +24,7 @@ const blogFostContent = [
 
 export default function BlogPost() {
   return (
-    <div className="container mx-auto flex flex-col justify-evenly items-center font-roboto px-6">
+    <div className="container py-28 mx-auto flex flex-col justify-evenly items-center font-roboto px-6 " id="blog">
       <div className="w-full flex flex-col justify-center items-center mb-10 lg:mb-0">
         <h5 className="text-orange-400 text-sm font-bold tracking-[3.50px] mb-3">BLOG POST</h5>
         <p className="text-black font-bold text-2xl text-center">Latest insight post the our company</p>

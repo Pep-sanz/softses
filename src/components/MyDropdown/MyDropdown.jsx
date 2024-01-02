@@ -14,7 +14,7 @@ export default function MyDropdown({ textHeader }) {
     <div className={`dropdown ${isOpen ? "open" : ""}`}>
       <div className={`header-dropdown shadow  ${isOpen ? "text-slate-100 bg-orange-400" : ""}`}>
         <span>{textHeader}</span>
-        <div className="toggle">
+        <div className="toggle cursor-pointer">
           <FiChevronDown onClick={toggleDropdown} className={`arrow-down ${isOpen ? "animation-toggle" : ""}`} />
         </div>
       </div>

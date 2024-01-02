@@ -10,11 +10,11 @@ export default function Navbar() {
   };
 
   const menuItem = [
-    { label: "Home", href: "/home" },
-    { label: "Feature", href: "/home" },
-    { label: "How to Make", href: "/home" },
-    { label: "contact", href: "/home" },
-    { label: "Profile", href: "/home" },
+    { label: "Home", href: "#home" },
+    { label: "Feature", href: "#feature" },
+    { label: "How to Make", href: "#howItWork" },
+    { label: "Blog", href: "#blog" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -53,7 +53,7 @@ export default function Navbar() {
       >
         <ul className=" flex flex-col pt-20 md:hidden h-full w-full">
           {menuItem.map((res, i) => (
-            <li className="p-6 border-b" key={i}>
+            <li className="p-6 border-b" onClick={handleclick} key={i}>
               <a href={res.href} className="hover:text-orange-400 active:text-orange-400 text-slate-100 text-md font-bold">
                 {res.label}
               </a>

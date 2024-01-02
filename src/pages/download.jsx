@@ -5,7 +5,7 @@ import Button from "../components/button";
 
 export default function Download() {
   return (
-    <div className="container m-auto flex justify-center items-center font-roboto mt-20 px-6 lg:pb-20" >
+    <div className="container m-auto flex justify-center items-center font-roboto px-6 lg:pb-20" >
       <div className="h-[335px] relative mt-[84px] w-full">
         <div className="h-[284px] absolute bg-blue-600 bg-opacity-20 rounded-[30px] w-full top-[30px] left-[30px] hidden sm:block" />
         <div className="h-[284px] absolute bg-blue-600 bg-opacity-30 rounded-[30px] w-full top-[5px] left-[16px] hidden sm:block" />
