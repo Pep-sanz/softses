@@ -53,8 +53,8 @@ export default function Navbar() {
       >
         <ul className=" flex flex-col pt-20 md:hidden h-full w-full">
           {menuItem.map((res, i) => (
-            <li className="p-6 border-b" onClick={handleclick} key={i}>
-              <a href={res.href} className="hover:text-orange-400 active:text-orange-400 text-slate-100 text-md font-bold">
+            <li className=" h-14 border-b w-full" onClick={handleclick} key={i}>
+              <a href={res.href} className="hover:text-orange-400 active:text-orange-400 text-slate-100 text-md font-bold flex items-center px-6 w-full h-full">
                 {res.label}
               </a>
             </li>
