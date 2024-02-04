@@ -3,28 +3,30 @@ import Map from "../assets/map.svg";
 import Map1 from "../assets/map1.svg";
 import MyDropdown from "../components/MyDropdown/MyDropdown.jsx";
 
-const content = [
-  {
-    id: 1,
-    title: "Completely Responsive.",
-    description:
-      " AeroLand appears professional in design and responsive in performance. It proves to be highly customizable and efficient for landing site building. Engage yourself in the most effortless and well-appointed process with AeroLand.",
-  },
-  {
-    id: 2,
-    title: "Free Lifetime Updates.",
-    description:
-      " AeroLand appears professional in design and responsive in performance. It proves to be highly customizable and efficient for landing site building. Engage yourself in the most effortless and well-appointed process with AeroLand.",
-  },
-  {
-    id: 3,
-    title: "Easy & User Friendly Services.",
-    description:
-      " AeroLand appears professional in design and responsive in performance. It proves to be highly customizable and efficient for landing site building. Engage yourself in the most effortless and well-appointed process with AeroLand.",
-  },
-];
-
 export default function QuestionsSection() {
+  const content = [
+    {
+      id: 1,
+      title: "Completely Responsive.",
+      description:
+        " AeroLand appears professional in design and responsive in performance. It proves to be highly customizable and efficient for landing site building. Engage yourself in the most effortless and well-appointed process with AeroLand.",
+        isOpen : false
+    },
+    {
+      id: 2,
+      title: "Free Lifetime Updates.",
+      description:
+        " AeroLand appears professional in design and responsive in performance. It proves to be highly customizable and efficient for landing site building. Engage yourself in the most effortless and well-appointed process with AeroLand.",
+        isOpen : false
+    },
+    {
+      id: 3,
+      title: "Easy & User Friendly Services.",
+      description:
+        " AeroLand appears professional in design and responsive in performance. It proves to be highly customizable and efficient for landing site building. Engage yourself in the most effortless and well-appointed process with AeroLand.",
+        isOpen : false
+    },
+  ];
 
   return (
     <div className="w-full font-roboto flex flex-col justify-start items-center box-border mt-16 gap-[50px] px-6">
@@ -34,8 +36,8 @@ export default function QuestionsSection() {
       </div>
       <div className="w-full box-border flex justify-around items-center flex-col mt-10 md:flex-row ">
         <div className="flex flex-col justify-center items-center w-full lg:w-1/2 gap-[15px] px-6">
-          {content.map((res) => (
-            <MyDropdown key={res.id} title={res.title} id={res.id} description={res.description} content={content} />
+          {content.map((res,i) => (
+            <MyDropdown key={i} title={res.title} id={res.id} description={res.description} content={content} isOpen={res.isOpen} />
           ))}
         </div>
         <img src={Pngkit} alt="" className="w-[350px] h-[285.96px] lg:w-[600px] lg:h-[385.96px]" />

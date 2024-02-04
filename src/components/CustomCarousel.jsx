@@ -42,7 +42,6 @@ const CustomCarousel = () => {
     <div className="w-full">
       <div className="w-full m-auto flex flex-col justify-between gap-10">
         <Carousel ref={carouselRef}>
-          {/* Isi carousel di sini */}
           {testiMonials.map((res) => (
             <div className="w-full" key={res.id}>
               <div className="w-full h-1/2 mb-3  text-lg flex justify-center items-center">

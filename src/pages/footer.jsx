@@ -12,7 +12,7 @@ export default function Footer() {
       <div className=" h-[341px] container flex flex-col justify-between items-center border-b-2 lg:flex-row ">
         <div className=" box-border w-full h-full flex flex-col justify-center text-sm">
           <img src={Logo2} alt="" className="mb-[25px] w-[100px] h-[25px] lg:w-[193.28px] lg:h-[50px]" />
-          <span >Landing page builder is a hosted platform powered by the brizy builder aiming to connect you with potential clients.</span>
+          <span className="max-w-[25vw]" >Landing page builder is a hosted platform powered by the brizy builder aiming to connect you with potential clients.</span>
         </div>
         <div className="w-full flex justify-around items-center text-stone-500 text-[13px] font-normal ">
           <div className="leading-7">
@@ -32,7 +32,7 @@ export default function Footer() {
             <ul>
               {productMenu.map((res, i) => (
                 <li key={i}>
-                  <a href="" className="hover:text-orange-400 transition">
+                  <a href="#" className="hover:text-orange-400 transition">
                     {res.label}
                   </a>
                 </li>

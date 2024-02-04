@@ -27,14 +27,13 @@ const pricingContent = [
 export default function PricingTable() {
   return (
     <div className="w-full pt-16 flex flex-col justify-evenly items-center font-roboto mt-20 px-6">
-      <div className="w-full flex flex-col justify-center items-center mb-10">
-        <h5 className="text-orange-400 text-sm font-bold tracking-[3.50px]">PRICING TABLE</h5>
-        <p className="text-black font-bold leading-[52px] text-2xl">Choose your pricing plan</p>
+      <div className="w-full text-center mb-10 font-bold">
+        <h5 className="text-orange-400 text-sm tracking-[3.50px]">PRICING TABLE</h5>
+        <p className="text-black leading-[52px] text-2xl">Choose your pricing plan</p>
       </div>
-      <div className="w-full flex justify-evenly items-center flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row">
-        <div className="">
+      <div className="w-full grid gap-6 md:grid-cols-2 lg:flex lg:flex-row">
           {pricingContent.map((res) => (
-            <div key={res.id} className="max-w-[370px] h-[596px] border shadow border-zinc-100 flex flex-col justify-evenly items-center bg-white rounded mb-10 px-6 m-auto">
+            <div key={res.id} className={`max-w-[370px] h-[596px] border shadow border-zinc-100 flex flex-col justify-evenly items-center bg-white rounded px-6 m-auto ${res.id === 3 ? 'md:col-span-2': ''}`}>
               <h5 className="text-black text-[40px] font-medium leading-[64px]">{res.title}</h5>
               <div className="w-full h-16 ">
                 <div className="w-1/2 flex justify-center border-b-2 m-auto">
@@ -44,17 +43,14 @@ export default function PricingTable() {
                 </div>
               </div>
               <ul className="flex flex-col justify-center items-center text-stone-500 text-[13px] font-medium leading-[42.90px]">
-                <li>{res.description[0]}</li>
-                <li>{res.description[1]}</li>
-                <li>{res.description[2]}</li>
-                <li>{res.description[3]}</li>
-                <li>{res.description[4]}</li>
+                {res.description.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
               </ul>
               <Button text="Get Started" />
               <div className="w-full h-[38px] text-center text-neutral-400 text-[13px] font-normal leading-[20.80px]">Start by trying our service for 30 days free trial no credit card required.</div>
             </div>
           ))}
-        </div>
       </div>
     </div>
   );
